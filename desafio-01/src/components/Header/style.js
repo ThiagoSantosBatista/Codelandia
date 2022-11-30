@@ -7,11 +7,11 @@ export const HeaderStyle = styled.header`
 export const Container = styled.div`
   max-width: 144rem;
   margin: 0 auto;
-  padding: 1rem 18%;
+  padding: 4rem 18%;
 `;
 
 export const LogoBox = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 6rem;
+  margin-bottom: 7rem;
 `;

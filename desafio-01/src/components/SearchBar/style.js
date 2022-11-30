@@ -5,12 +5,12 @@ export const SearchBox = styled.div`
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
-  margin-bottom: 3rem;
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.2);
 
   input {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
     width: 100%;
     height: 5rem;
     border: none;
