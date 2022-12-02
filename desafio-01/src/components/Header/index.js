@@ -1,6 +1,6 @@
 import React from "react";
-import BlogSvg from "../../assets/BlogSvg.js";
-import Logo from "../../assets/Logo.js";
+import { ReactComponent as BlogSvg } from "../../assets/blog.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import SearchBar from "../SearchBar/index.js";
 import { HeaderStyle, Container, LogoBox } from "./style.js";
 
@@ -9,7 +9,7 @@ const Header = () => {
     <HeaderStyle>
       <Container>
         <LogoBox>
-          <Logo className="logo" />
+          <Logo />
           <BlogSvg />
         </LogoBox>
         <SearchBar placeholder='Pesquisar no blog' />

@@ -18,8 +18,8 @@ export const DataBox = styled.div`
 
   @media screen and (max-width: 600px) {
     svg {
-        width: 1.9rem;
-        height: 1.6rem;
+      width: 1.9rem;
+      height: 1.6rem;
     }
   }
 `;
@@ -37,10 +37,12 @@ export const PostData = styled.p`
 export const PostTitulo = styled.h1`
   font-size: 2.6rem;
   margin-bottom: 0.6rem;
+  line-height: 1.2;
   color: #1a202c;
 
   @media screen and (max-width: 600px) {
     font-size: 1.8rem;
+    line-height: 1.3;
   }
 `;
 export const PostConteudo = styled.p`
