@@ -9,7 +9,7 @@ const Header = () => {
     <HeaderStyle>
       <Container>
         <LogoBox>
-          <Logo />
+          <Logo className="logo" />
           <BlogSvg />
         </LogoBox>
         <SearchBar placeholder='Pesquisar no blog' />

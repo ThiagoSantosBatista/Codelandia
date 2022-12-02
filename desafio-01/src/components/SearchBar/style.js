@@ -27,4 +27,16 @@ export const SearchBox = styled.div`
   svg {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 600px) {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+    input {
+      height: 4rem;
+      font-size: 1.4em;
+    }
+    svg {
+      width: 1.5rem;
+    }
+  }
 `;
