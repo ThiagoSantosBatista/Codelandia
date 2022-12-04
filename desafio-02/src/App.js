@@ -1,10 +1,13 @@
+import React from "react";
 import Header from "./components/Header.js";
+import Main from "./components/Main.js/index.js";
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <Header />
-    </div>
+      <Main />
+    </React.Fragment>
   );
 }
 

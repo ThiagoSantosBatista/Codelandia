@@ -22,6 +22,6 @@ export const DivLogo = styled.div`
 
 export const DescontoP = styled.p`
   font-size: 1.6rem;
-  padding: 2rem 0;
+  padding: 2rem;
   color: white;
 `;

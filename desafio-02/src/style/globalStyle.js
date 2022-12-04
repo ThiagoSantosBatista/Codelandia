@@ -14,9 +14,14 @@ export const GlobalStyle = createGlobalStyle`
     body{
         min-height: 100vh;
         background: #F9F9F9;
+        color: #F9F9F9;
     }
     li{
         list-style: none;
+    }
+    img{
+        display: block;
+        max-width: 100%;
     }
 `;
 export const Container = styled.div`
