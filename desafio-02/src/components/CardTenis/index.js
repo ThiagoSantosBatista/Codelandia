@@ -1,9 +1,9 @@
 import React from 'react'
-import { CardLi, CardImg } from './style'
+import { CardLi } from './style'
 
 const CardTenis = (props) => {
   return (
-    <CardLi><CardImg src={props.imagem}/></CardLi>
+    <CardLi><img src={props.imagem} alt="tenis" /></CardLi>
   )
 }
 

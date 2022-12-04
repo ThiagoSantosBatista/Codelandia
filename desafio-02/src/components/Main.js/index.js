@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../../style/globalStyle";
 import CardTenis from "../CardTenis";
 import {
     HeroSection,
@@ -41,20 +40,18 @@ const Main = () => {
                     </HeroText>
                 </HeroContainer>
             </HeroSection>
-            <Container>
-                <DestaquesSection>
-                    <h2>Destaques</h2>
-                    <p>
-                        Frete grátis e chinelo de brinde é aqui, aproveite por
-                        tempo limitado.{" "}
-                    </p>
-                    <ul>
-                        {tenisArray.map((src) => (
-                            <CardTenis key={src} imagem={src} />
-                        ))}
-                    </ul>
-                </DestaquesSection>
-            </Container>
+            <DestaquesSection>
+                <h2>Destaques</h2>
+                <p>
+                    Frete grátis e chinelo de brinde é aqui, aproveite por tempo
+                    limitado.{" "}
+                </p>
+                <ul>
+                    {tenisArray.map((src) => (
+                        <CardTenis key={src} imagem={src} />
+                    ))}
+                </ul>
+            </DestaquesSection>
         </main>
     );
 };

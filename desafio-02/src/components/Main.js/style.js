@@ -23,9 +23,8 @@ export const HeroSection = styled.section`
 `;
 
 export const HeroContainer = styled.div`
-    max-width: 199.2rem;
+    max-width: 192rem;
     margin: 0 auto;
-    padding: 0 10rem;
     height: 100%;
     position: relative;
 `;
@@ -33,7 +32,7 @@ export const HeroContainer = styled.div`
 export const HeroText = styled.div`
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10rem;
     transform: translateY(-50%);
     z-index: 1;
     h1 {
@@ -47,12 +46,23 @@ export const HeroText = styled.div`
         line-height: 1.5;
         max-width: 40ch;
     }
+    @media screen and (max-width: 1920px) {
+        left: 5%;
+    }
 `;
 
 export const DestaquesSection = styled.section`
-    color: #181818;
+    max-width: 192rem;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    padding: 7rem 0 16.2rem;
+    padding: 7rem 10rem 16.2rem;
+    color: #181818;
+
+    @media screen and (max-width: 1920px) {
+        padding: 7rem 5% 16.2rem;
+    }
+
     h2 {
         font-size: clamp(2.8rem, 1.67vw, 3.2rem);
         font-weight: 600;
@@ -65,10 +75,10 @@ export const DestaquesSection = styled.section`
     }
     ul {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(37rem, 1fr));
         gap: 4rem 2rem;
 
-        @media screen and (max-width: 1550px) {
+        @media screen and (max-width: 400px) {
             grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
         }
     }

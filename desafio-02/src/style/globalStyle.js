@@ -1,9 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-:root{
-    min-height: 100vh;
-}
     *, *::after, *::before {
         margin: 0;
         padding: 0;
@@ -27,9 +24,4 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
         max-width: 100%;
     }
-`;
-export const Container = styled.div`
-    max-width: 199.2rem;
-    margin: 0 auto;
-    padding: 0 5%;
 `;
