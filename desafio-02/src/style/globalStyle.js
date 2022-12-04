@@ -1,6 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+:root{
+    min-height: 100vh;
+}
     *, *::after, *::before {
         margin: 0;
         padding: 0;

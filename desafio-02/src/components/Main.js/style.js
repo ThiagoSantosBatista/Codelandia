@@ -4,7 +4,6 @@ import ImgBackground from "../../assets/wallpaper.jpeg";
 export const HeroSection = styled.section`
     height: 38rem;
     width: 100%;
-    margin-bottom: 7rem;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -38,13 +37,13 @@ export const HeroText = styled.div`
     transform: translateY(-50%);
     z-index: 1;
     h1 {
-        font-size: 4.8rem;
+        font-size: clamp(2.8rem, 2.5vw, 4.8rem);
         font-weight: 600;
         margin-bottom: 2.6rem;
         line-height: 1.2;
     }
     p {
-        font-size: 2.4rem;
+        font-size: clamp(1.6rem, 1.25vw, 2.4rem);
         line-height: 1.5;
         max-width: 40ch;
     }
@@ -53,20 +52,24 @@ export const HeroText = styled.div`
 export const DestaquesSection = styled.section`
     color: #181818;
     text-align: center;
-    margin-bottom: 10rem;
+    padding: 7rem 0 16.2rem;
     h2 {
-        font-size: 3.2rem;
+        font-size: clamp(2.8rem, 1.67vw, 3.2rem);
         font-weight: 600;
-        margin-bottom: 1.7rem
+        margin-bottom: 1.7rem;
     }
-    p{
-        font-size: 2rem;
+    p {
+        font-size: clamp(1.6rem, 1.04vw, 2rem);
         line-height: 1.5;
-        margin-bottom: 6.5rem
+        margin-bottom: 6.5rem;
     }
-    ul{
+    ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
         gap: 4rem 2rem;
+
+        @media screen and (max-width: 1550px) {
+            grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+        }
     }
 `;
