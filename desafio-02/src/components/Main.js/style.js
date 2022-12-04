@@ -66,7 +66,7 @@ export const DestaquesSection = styled.section`
     }
     ul{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
         gap: 4rem 2rem;
     }
 `;

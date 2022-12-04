@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         background: #F9F9F9;
         color: #F9F9F9;
+        position: relative;
     }
     li{
         list-style: none;
@@ -25,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 export const Container = styled.div`
-  max-width: 199.2rem;
-  margin: 0 auto;
-  padding: 0 5%;
+    max-width: 199.2rem;
+    margin: 0 auto;
+    padding: 0 5%;
 `;
