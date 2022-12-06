@@ -11,6 +11,12 @@ export const MainStyle = styled.main`
     @media screen and (max-width: 1650px) {
         padding: 15rem 9.66%;
     }
+    @media screen and (max-width: 1250px) {
+        padding: 15rem 4.66%;
+    }
+    @media screen and (max-width: 900px) {
+        padding: 9.5rem 4.66%;
+    }
 `;
 
 export const CardUl = styled.ul`

@@ -1,9 +1,9 @@
 import React from 'react'
 import ButtonStyle from './style'
 
-const Button = ({text, px, mgTop}) => {
+const Button = ({btnType, text, px, mgTop}) => {
   return (
-   <ButtonStyle px={px} mgTop={mgTop}>{text}</ButtonStyle>
+   <ButtonStyle type={btnType || "submit"} px={px} mgTop={mgTop}>{text}</ButtonStyle>
   )
 }
 

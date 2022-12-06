@@ -13,8 +13,16 @@ export const ButtonStyle = styled.button`
     box-shadow: 0 0.5rem 0.5rem rgba(23, 23, 23, 0.1);
     transition: all 0.3s;
 
-    &:hover {
-        background: #9891ff;
+    @media (hover: hover) {
+        &:hover {
+            background: #9891ff;
+        }
+    }
+
+    @media (hover: none) {
+        &:hover {
+            background: #6c63ff;
+        }
     }
 `;
 

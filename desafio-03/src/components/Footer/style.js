@@ -21,4 +21,7 @@ export const FooterStyle = styled.footer`
     @media screen and (max-width: 1650px) {
         padding: 8.6rem 9.66% 8rem;
     }
+    @media screen and (max-width: 1250px) {
+        padding: 8.6rem 4.66% 8rem;
+    }
 `;

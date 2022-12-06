@@ -21,10 +21,10 @@ const inputArray = [
 
 const Form = () => {
     return (
-        <FormStyle>
+        <FormStyle onSubmit={event => event.preventDefault()}>
             {inputArray.map(({ type, placeholder }) => <FormInput type={type} placeholder={placeholder} />)}
             <FormTextArea />
-            <Button px="1rem" mgTop="1rem" text="Enviar Mensagem" />
+            <Button btnType="button" px="1rem" mgTop="1rem" text="Enviar Mensagem" type="button"  />
         </FormStyle>
     );
 };
