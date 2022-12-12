@@ -5,8 +5,8 @@ export const LoginForm = styled.form`
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    padding: 5rem 17.7rem 5rem 19.3rem;
+    padding: 5rem 2rem;
+    max-width: 34.7rem;
     background: #ffffff;
 
     h1 {
@@ -14,13 +14,6 @@ export const LoginForm = styled.form`
         font-weight: 700;
         font-family: "Merriweather", serif;
         margin-bottom: 3.9rem;
-    }
-
-    @media screen and (max-width: 1440px) {
-        padding: 5rem 12.64vw 5rem 13.78vw;
-    }
-    @media screen and (max-width: 1200px) {
-        padding: 5rem 8.64vw 5rem 9.78vw;
     }
 `;
 

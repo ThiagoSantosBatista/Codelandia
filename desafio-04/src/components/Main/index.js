@@ -1,15 +1,17 @@
-import React from 'react'
-import { MainStyle } from './style'
-import { ReactComponent as IllustrationSvg } from "../../assets/illustration.svg"
-import Form from '../Form'
+import React from "react";
+import { MainStyle, ImgDiv } from "./style";
+import IllustrationSvg from "../../assets/illustration.svg";
+import Form from "../Form";
 
 const Main = () => {
-  return (
-    <MainStyle>
-      <IllustrationSvg />
-      <Form />
-    </MainStyle>
-  )
-}
+    return (
+        <MainStyle>
+            <ImgDiv>
+                <img src={IllustrationSvg} alt="ilustração" />
+            </ImgDiv>
+            <Form />
+        </MainStyle>
+    );
+};
 
-export default Main
+export default Main;

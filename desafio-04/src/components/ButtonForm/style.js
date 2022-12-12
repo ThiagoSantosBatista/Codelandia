@@ -19,7 +19,6 @@ export const ButtonStyle = styled.button`
     }
     svg {
         margin-right: 1.2rem;
-        padding: 0;
         width: 2rem;
         height: auto;
     }
