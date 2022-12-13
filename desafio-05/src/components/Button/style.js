@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonStyle = styled.button`
+export const ButtonStyle = styled.button`
     display: flex;
     gap: 1.4rem;
     justify-content: center;
@@ -31,4 +31,4 @@ const ButtonStyle = styled.button`
     }
 `;
 
-export default ButtonStyle;
+

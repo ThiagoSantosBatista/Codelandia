@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
       min-height: 100vh;
       color: #F9F9F9;
       background: linear-gradient(135deg, #628E75, #1A4855);
+      position: relative;
    }
    img{
       display: block;
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
       list-style: none;
    }
    a{
-      text-transform: none;
+      text-decoration: none;
    }
 `;
 
