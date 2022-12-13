@@ -10,12 +10,23 @@ export const ButtonStyle = styled.button`
     border: 0.2rem solid #658e76;
     background: ${(props) => (props.bg ? props.bg : "transparent")};
     transform: skew(-24deg);
-    &:hover,
-    &:focus {
-        transition: all 0.3s;
-        background: ${(props) => (props.bg ? "#658e76" : "#658e76")};
-        transform: translateY(-0.2rem) skew(-24deg);
-        box-shadow: 0 0.2rem 0.5rem black;
+    @media (hover: hover) {
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            background: ${(props) => (props.bg ? "#658e76" : "#658e76")};
+            transform: translateY(-0.2rem) skew(-24deg);
+            box-shadow: 0 0.2rem 0.5rem black;
+        }
+    }
+    @media (hover: none) {
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            background: ${(props) => (props.bg ? props.bg : "transparent")};
+            transform: skew(-24deg);
+            box-shadow: none;
+        }
     }
 
     p {
@@ -30,5 +41,3 @@ export const ButtonStyle = styled.button`
         transform: skew(24deg);
     }
 `;
-
-
