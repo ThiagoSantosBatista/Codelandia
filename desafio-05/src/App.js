@@ -4,8 +4,6 @@ import Main from "./components/Main";
 import { GlobalStorage} from "./components/GlobalContext";
 
 function App() {
-    const [modal, setModal] = React.useState(false);
-
     return (
         <GlobalStorage>
             <Header />
