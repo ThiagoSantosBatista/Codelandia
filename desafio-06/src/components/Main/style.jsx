@@ -61,6 +61,13 @@ export const ContentDiv = styled.section`
     .infoText {
         grid-area: p;
     }
+    .linha {
+        display: none;
+        width: 100%;
+        height: .1rem;
+        background: ${props => props.theme.color.linhaMobile};
+    }
+
     @media screen and (max-width: 1300px) {
         max-width: 80.13%;
     }
@@ -79,10 +86,11 @@ export const ContentDiv = styled.section`
         }
     }
     @media screen and (max-width: 600px) {
-        grid-template-rows: repeat(2, auto);
         grid-template-areas:
             "btn"
+            "linha"
             "p";
+        gap: 2rem;
         margin-bottom: 0;
         max-width: 100%;
         padding: 3rem 2.4rem;
@@ -90,6 +98,10 @@ export const ContentDiv = styled.section`
         border-top-right-radius: 2rem;
         background: ${(props) => props.theme.color.blackMobile};
         position: relative;
+        .linha {
+            grid-area: linha;
+            display: block;
+        }
     }
 `;
 
@@ -99,7 +111,7 @@ export const InfoDiv = styled.div`
     align-items: center;
     gap: 0 10.5rem;
     p {
-      line-height: 1;
+        line-height: 1;
         font-weight: 700;
         font-size: clamp(1.6rem, 1.67vw, 2.4rem);
     }

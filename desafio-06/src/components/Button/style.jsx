@@ -11,6 +11,17 @@ export const ButtonStyle = styled.button`
    font-family: ${props => props.theme.font.secondary};
    background: ${props => props.type === 'a' ? "#0072D2" : "#131318"};
 
+   @media (hover: hover) {
+      &:hover{
+         transition: all .3s;
+         opacity: .7;
+      }
+   }
+   @media (hover: none) {
+      &:hover{
+         opacity: 1;
+      }
+   }
    @media screen and (max-width: 600px){
       padding: 1rem; 
       width: 100%;
