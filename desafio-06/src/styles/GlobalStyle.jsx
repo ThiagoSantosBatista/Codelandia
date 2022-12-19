@@ -16,9 +16,13 @@ const GlobalStyle = createGlobalStyle`
       min-height: 100vh;
       color: ${(props) => props.theme.color.white};
       background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(${ImgBg});
+      background-position: top;
+      background-size: cover;
+      background-image: url(${ImgBg});
+
+      @media screen and (max-width: 600px){
+         background-size: auto 65rem;
+      }
    }
    img{
       display: block;
