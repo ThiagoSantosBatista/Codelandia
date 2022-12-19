@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
       @media screen and (max-width: 600px){
          background-size: auto 65rem;
       }
+      
+      @media screen and (max-width: 600px) and (min-height: 850px){
+         background-size: cover;
+      }
    }
    img{
       display: block;

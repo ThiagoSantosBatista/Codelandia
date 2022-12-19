@@ -12,7 +12,7 @@ export const Container = styled.div`
     grid-template-rows: auto 1fr;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 12rem;
     min-height: 100vh;
     max-width: 144rem;
     width: 100%;
@@ -36,6 +36,9 @@ export const TituloDiv = styled.section`
         margin-top: 3.5rem;
         font-size: clamp(6.4rem, 6.67vw, 9.6rem);
     }
+    @media screen and (max-width: 600px) {
+        margin: 3.5rem 0 6rem;
+    }
 `;
 
 export const ContentDiv = styled.section`
@@ -50,7 +53,7 @@ export const ContentDiv = styled.section`
         "img info"
         "img btn";
     gap: 2.5rem 7.5rem;
-    font-size: clamp(1.4rem, 1.39vw, 2rem);
+    font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 3rem;
     img {
@@ -64,8 +67,8 @@ export const ContentDiv = styled.section`
     .linha {
         display: none;
         width: 100%;
-        height: .1rem;
-        background: ${props => props.theme.color.linhaMobile};
+        height: 0.1rem;
+        background: ${(props) => props.theme.color.linhaMobile};
     }
 
     @media screen and (max-width: 1300px) {
@@ -86,6 +89,7 @@ export const ContentDiv = styled.section`
         }
     }
     @media screen and (max-width: 600px) {
+        font-size: 1.4rem;
         grid-template-areas:
             "btn"
             "linha"
@@ -146,5 +150,43 @@ export const ButtonDiv = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem 1rem;
+    }
+`;
+
+export const Modal = styled.div`
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: ${(props) => props.theme.color.blackBg};
+    div {
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        button {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
+            color: red;
+            border: 0.15rem solid red;
+            cursor: pointer;
+            width: 4rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: ${(props) => props.theme.color.dark};
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        iframe {
+            width: 80%;
+        }
     }
 `;
