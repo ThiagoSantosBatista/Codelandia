@@ -1,24 +1,36 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  align-items: center;
-  grid-template-areas:
-    "TPrincipal ImgRight"
-    "ImgLeft    TSecundario";
-  gap: 9rem 12.4rem;
   max-width: 192rem;
   margin: 0 auto;
-  padding: 0 18%;
-  .ImgRight {
-    grid-area: ImgRight;
+  padding: 0 34.6rem;
+  h2 {
+    font-size: ${(props) => props.theme.font.h2};
+    font-weight: 500;
+  }
+  @media screen and (max-width: 1920px) {
+    padding: 0 18%;
+  }
+  @media screen and (max-width: 1800px) {
+    padding: 0 14%;
+  }
+  @media screen and (max-width: 1600px) {
+    padding: 0 10%;
+  }
+  @media screen and (max-width: 1450px) {
+    padding: 0 5%;
   }
 `;
 
+export const TopSection = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 39.6rem;
+  align-items: center;
+  gap: 12.4rem;
+  margin-bottom: 8rem;
+`;
+
 export const TPrincipalDiv = styled.div`
-  grid-area: TPrincipal;
   h1 {
     font-size: ${(props) => props.theme.font.h1};
     font-weight: 600;
@@ -55,19 +67,43 @@ export const TPrincipalDiv = styled.div`
 `;
 
 export const ImgLeftDiv = styled.div`
-  grid-area: ImgLeft;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
 `;
 
-export const TSecundarioDiv = styled.div`
-  grid-area: TSecundario;
+export const TSecundario = styled.header`
   h2 {
-    font-size: ${(props) => props.theme.font.h2};
-    font-weight: 500;
     max-width: 32.1rem;
     margin-bottom: 3.2rem;
+  }
+`;
+
+export const ArtistasSection = styled.section`
+  margin-bottom: 8rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: flex;
+    gap: 2rem;
+    color: ${(props) => props.theme.color.white};
+  }
+  li {
+    position: relative;
+    h3,
+    p {
+      font-size: ${(props) => props.theme.font.p3};
+      font-weight: 600;
+      position: absolute;
+      top: 2.4rem;
+      left: 2.4rem;
+    }
+    p {
+      top: 6.1rem;
+      font-weight: 500;
+      font-size: ${(props) => props.theme.font.p1};
+    }
   }
 `;
