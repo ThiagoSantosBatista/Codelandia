@@ -9,6 +9,16 @@ const theme = {
     gray: "#EBEBEB",
     blue: "#3772FF",
   },
+  font: {
+    h1: "4.8rem",
+    h2: "4rem",
+    h3: "2.4rem",
+    p1: "1.4rem",
+    p2: "1.6rem",
+    p3: "2.4rem",
+    p4: "3.2rem",
+    btn: "1.4rem",
+  },
 };
 
 interface Props {
@@ -16,7 +26,7 @@ interface Props {
 }
 
 const LightTheme = ({ children }: Props) => {
-    return <ThemeProvider theme={theme}>{children}</ThemeProvider>
-}
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+};
 
-export default LightTheme
+export default LightTheme;

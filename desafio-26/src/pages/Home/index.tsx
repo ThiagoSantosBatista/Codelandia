@@ -1,11 +1,12 @@
-import React from 'react'
-import * as S from "./style"
+import React from "react";
+import Header from "../../components/Header";
 
 const Home = () => {
   return (
     <>
+      <Header />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

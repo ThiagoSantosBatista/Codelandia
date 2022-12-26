@@ -1,11 +1,14 @@
 import Home from "./pages/Home";
 import GlobalStyle from "./styles/GlobalStyle";
+import LightTheme from "./styles/themes/light";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Home />
+      <LightTheme>
+        <GlobalStyle />
+        <Home />
+      </LightTheme>
     </>
   );
 }

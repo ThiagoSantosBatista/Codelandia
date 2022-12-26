@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
    }
    body{
       min-height: 100vh;
+      background: ${(props) => props.theme.color.white};
    }
    img{
       display: block;
