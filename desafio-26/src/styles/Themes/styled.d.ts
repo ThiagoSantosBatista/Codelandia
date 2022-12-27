@@ -18,6 +18,7 @@ declare module 'styled-components' {
       p3: string;
       p4: string;
       btn: string;
+      nav: string;
     },
   }
 }

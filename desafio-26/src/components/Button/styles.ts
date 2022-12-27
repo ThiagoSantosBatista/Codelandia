@@ -11,4 +11,15 @@ export const Button = styled.button`
   text-transform: uppercase;
   color: ${(props) => props.theme.color.white};
   background: ${(props) => props.theme.color.blue};
+  transition: all .3s;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  @media (hover: none) {
+    &:hover {
+      opacity: 1;
+    }
+  }
 `;

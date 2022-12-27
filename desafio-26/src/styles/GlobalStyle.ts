@@ -10,9 +10,11 @@ const GlobalStyle = createGlobalStyle`
    }
    html{
       font-size: 62.5%;
+      scroll-behavior: smooth;
    }
    body{
       min-height: 100vh;
+      color: ${(props) => props.theme.color.black600};
       background: ${(props) => props.theme.color.white};
    }
    img{

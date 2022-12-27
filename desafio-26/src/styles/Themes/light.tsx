@@ -18,6 +18,7 @@ const theme = {
     p3: "2.4rem",
     p4: "3.2rem",
     btn: "1.4rem",
+    nav: "1.8rem",
   },
 };
 

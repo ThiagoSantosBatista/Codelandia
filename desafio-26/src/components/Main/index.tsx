@@ -11,7 +11,7 @@ import Button from "../Button";
 
 const Main = () => {
   return (
-    <S.Main>
+    <S.Main id="home">
       <S.TopSection>
         <S.TPrincipalDiv>
           <header>

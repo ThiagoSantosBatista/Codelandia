@@ -89,9 +89,22 @@ export const ArtistasSection = styled.section`
     display: flex;
     gap: 2rem;
     color: ${(props) => props.theme.color.white};
+    @media (hover: hover){
+      &:has(li:hover) li:not(:hover) {
+        opacity: 0.6;
+        scale: 0.97;
+      }
+    }
+    @media (hover: none){
+      &:has(li:hover) li:not(:hover) {
+        opacity: 1;
+        scale: 1;
+      }
+    }
   }
   li {
     position: relative;
+    transition: all 0.3s;
     h3,
     p {
       font-size: ${(props) => props.theme.font.p3};
