@@ -18,5 +18,5 @@
   },
   "include": ["src", "src/custom.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "files": ["src/styles/themes/styled.d.ts"]
+  "files": ["src/styles/Themes/styled.d.ts"]
 }

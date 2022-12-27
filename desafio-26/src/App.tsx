@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import GlobalStyle from "./styles/GlobalStyle";
-import LightTheme from "./styles/themes/light";
+import LightTheme from "./styles/Themes/light";
 
 function App() {
   return (
