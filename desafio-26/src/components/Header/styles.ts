@@ -20,5 +20,9 @@ export const Header = styled.header`
   @media screen and (max-width: 1450px) {
     padding: 0 5%;
   }
+  @media screen and (max-width: 800px) {
+    margin: 2.4rem auto 4.8rem;
+
+  }
 `;
 

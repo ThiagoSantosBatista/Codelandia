@@ -10,15 +10,15 @@ const theme = {
     blue: "#3772FF",
   },
   font: {
-    h1: "4.8rem",
-    h2: "4rem",
-    h3: "2.4rem",
+    h1: "clamp(2.6rem, 2.5vw, 4.8rem)",
+    h2: "clamp(2.4rem, 2.08vw, 4rem)",
+    h3: "clamp(2.2rem, 1.25vw, 2.4rem)",
     p1: "1.4rem",
-    p2: "1.6rem",
-    p3: "2.4rem",
-    p4: "3.2rem",
-    btn: "1.4rem",
-    nav: "1.8rem",
+    p2: "clamp(1.4rem, 0.83vw, 1.6rem)",
+    p3: "clamp(1.4rem, 2.5vw, 2.4rem)",
+    p4: "clamp(2.4rem, 1.67vw, 3.2rem)",
+    btn: "clamp(1.2rem, 0.73vw, 1.4rem)",
+    nav: "clamp(1.2rem, 0.94vw, 1.8rem)",
   },
 };
 

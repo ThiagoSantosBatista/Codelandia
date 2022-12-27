@@ -19,6 +19,12 @@ export const Footer = styled.footer`
   @media screen and (max-width: 1450px) {
     padding: 0 5%;
   }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6rem;
+    margin: 4rem auto;
+  }
 `;
 
 export const FooterNav = styled.nav`
@@ -26,12 +32,12 @@ export const FooterNav = styled.nav`
   text-transform: uppercase;
   ul {
     display: flex;
-    gap: 3.7rem;
+    gap: 1.7rem;
     font-weight: 500;
   }
-  a {
+  a{
     padding: 1rem;
-    transition: all 0.3s;
+    transition: color 0.3s;
     @media (hover: hover) {
       &:hover {
         color: ${(props) => props.theme.color.black400};
@@ -41,6 +47,14 @@ export const FooterNav = styled.nav`
       &:hover {
         color: ${(props) => props.theme.color.black600};
       }
+    }
+  }
+  @media screen and (max-width: 600px){
+    ul{
+      gap: 1.5rem;
+    }
+    a{
+      padding: 0.5rem;
     }
   }
 `;

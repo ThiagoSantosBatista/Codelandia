@@ -29,4 +29,7 @@ export const SearchBar = styled.div`
     transform: translateY(-50%);
     cursor: pointer;
   }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;

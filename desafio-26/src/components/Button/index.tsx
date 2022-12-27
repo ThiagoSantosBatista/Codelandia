@@ -3,11 +3,12 @@ import * as S from "./styles"
 
 interface Props {
   text: string;
+  local?: string;
 }
 
-const Button = ({text}: Props) => {
+const Button = ({text, local}: Props) => {
   return (
-    <S.Button>{text}</S.Button>
+    <S.Button local={local}>{text}</S.Button>
   )
 }
 

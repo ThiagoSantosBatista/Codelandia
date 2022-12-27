@@ -28,6 +28,18 @@ export const TopSection = styled.section`
   align-items: center;
   gap: 12.4rem;
   margin-bottom: 8rem;
+  @media screen and (max-width: 1050px) {
+    grid-template-columns: 1fr 31rem;
+  }
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    margin-bottom: 6rem;
+    .ImgRight {
+      display: none;
+    }
+  }
 `;
 
 export const TPrincipalDiv = styled.div`
@@ -64,19 +76,52 @@ export const TPrincipalDiv = styled.div`
       }
     }
   }
+  @media screen and (max-width: 800px) {
+    h1 {
+      margin-bottom: 0.8rem;
+    }
+    p {
+      margin-bottom: 2.4rem;
+    }
+    button {
+      margin-bottom: 4rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .estatisticas {
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
 `;
 
 export const ImgLeftDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.6rem;
+  @media screen and (max-width: 1300px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    img {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    margin-bottom: 4rem;
+  }
 `;
 
 export const TSecundario = styled.header`
   h2 {
     max-width: 32.1rem;
     margin-bottom: 3.2rem;
+  }
+  @media screen and (max-width: 800px) {
+    h2 {
+      margin-bottom: 1.6rem;
+    }
   }
 `;
 
@@ -86,16 +131,17 @@ export const ArtistasSection = styled.section`
     margin-bottom: 2rem;
   }
   ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 2rem;
     color: ${(props) => props.theme.color.white};
-    @media (hover: hover){
+    @media (hover: hover) {
       &:has(li:hover) li:not(:hover) {
         opacity: 0.6;
         scale: 0.97;
       }
     }
-    @media (hover: none){
+    @media (hover: none) {
       &:has(li:hover) li:not(:hover) {
         opacity: 1;
         scale: 1;
@@ -105,9 +151,13 @@ export const ArtistasSection = styled.section`
   li {
     position: relative;
     transition: all 0.3s;
+    img {
+      height: 48.4rem;
+      width: 100%;
+    }
     h3,
     p {
-      font-size: ${(props) => props.theme.font.p3};
+      font-size: ${(props) => props.theme.font.h3};
       font-weight: 600;
       position: absolute;
       top: 2.4rem;
@@ -118,5 +168,8 @@ export const ArtistasSection = styled.section`
       font-weight: 500;
       font-size: ${(props) => props.theme.font.p1};
     }
+  }
+  @media screen and (max-width: 800px) {
+    margin-bottom: 4rem;
   }
 `;

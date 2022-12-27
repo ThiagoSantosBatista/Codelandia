@@ -9,7 +9,7 @@ const Header = () => {
     <S.Header>
       <Logo />
       <SearchBar />
-      <Button text="Entrar" />
+      <Button local="header" text="Entrar" />
     </S.Header>
   )
 }
