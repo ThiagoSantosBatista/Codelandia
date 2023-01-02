@@ -11,6 +11,15 @@ export const Header = styled.header`
   @media screen and (max-width: 1920px) {
     padding: 0 18%;
   }
+  @media screen and (max-width: 1850px) {
+    padding: 0 14%;
+  }
+  @media screen and (max-width: 1650px) {
+    padding: 0 10%;
+  }
+  @media screen and (max-width: 1500px) {
+    padding: 0 5%;
+  }
 `;
 
 export const NavUlPrincipal = styled.ul`
@@ -25,7 +34,7 @@ export const NavUlSecundario = styled.ul`
   align-items: center;
   gap: 3.2rem;
   margin-left: 0.8rem;
-  svg{
+  svg {
     cursor: pointer;
   }
 `;
