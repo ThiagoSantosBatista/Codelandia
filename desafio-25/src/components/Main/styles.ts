@@ -36,12 +36,14 @@ export const HeroContentBox = styled.div`
     "btn link";
   gap: 0 4rem;
   max-width: 49.8rem;
-  h1 {
+  header {
     grid-area: h1;
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 1.6rem;
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1.6rem;
+    }
   }
   p {
     grid-area: p;
@@ -87,17 +89,17 @@ export const DesignSection = styled.section`
 
 export const DesignContentBox = styled.div`
   max-width: 58.5rem;
-  div{
+  div {
     padding: 2rem 3.2rem 3rem;
     margin-bottom: 2.4rem;
     color: #ffffff;
     background: #272727;
-    h2{
+    h2 {
       font-size: 2.8rem;
       font-weight: 600;
       margin-bottom: 2rem;
     }
-    p{
+    p {
       font-size: 1.6rem;
       line-height: 1.5;
     }
@@ -121,5 +123,53 @@ export const DesignImgBox = styled.div`
     height: 100%;
     z-index: -1;
     background: #272727;
+  }
+`;
+
+export const GaleriaSection = styled.section`
+  background: #f9f9f9;
+`;
+export const GaleriaSectionBox = styled.section`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5.5rem 34.7rem;
+  max-width: 192rem;
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+  }
+  p {
+    align-self: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 77.1rem;
+    margin-bottom: 3.2rem;
+    color: #797979;
+  }
+
+  @media screen and (max-width: 1920px) {
+    padding: 5.5rem 18%;
+  }
+  @media screen and (max-width: 1850px) {
+    padding: 5.5rem 14%;
+  }
+  @media screen and (max-width: 1650px) {
+    padding: 5.5rem 10%;
+  }
+  @media screen and (max-width: 1500px) {
+    padding: 5.5rem 5%;
+  }
+`;
+
+export const GaleriaUl = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31.2rem, 1fr));
+  gap: 2rem;
+  img {
+    width: 100%;
   }
 `;
