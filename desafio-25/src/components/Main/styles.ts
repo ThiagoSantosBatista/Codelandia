@@ -62,3 +62,64 @@ export const HeroContentBox = styled.div`
     border-bottom: 0.1rem solid #272727;
   }
 `;
+
+export const DesignSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 13rem 34.7rem 8.2rem;
+  max-width: 192rem;
+
+  @media screen and (max-width: 1920px) {
+    padding: 13rem 18% 8.2rem;
+  }
+  @media screen and (max-width: 1850px) {
+    padding: 13rem 14% 8.2rem;
+  }
+  @media screen and (max-width: 1650px) {
+    padding: 13rem 10% 8.2rem;
+  }
+  @media screen and (max-width: 1500px) {
+    padding: 13rem 5% 8.2rem;
+  }
+`;
+
+export const DesignContentBox = styled.div`
+  max-width: 58.5rem;
+  div{
+    padding: 2rem 3.2rem 3rem;
+    margin-bottom: 2.4rem;
+    color: #ffffff;
+    background: #272727;
+    h2{
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+  a {
+    font-size: 1.8rem;
+    border-bottom: 0.1rem solid #272727;
+  }
+`;
+
+export const DesignImgBox = styled.div`
+  position: relative;
+  margin: 5rem 0 0 5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 5rem;
+    right: 5rem;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #272727;
+  }
+`;
