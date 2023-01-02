@@ -173,3 +173,37 @@ export const GaleriaUl = styled.ul`
     width: 100%;
   }
 `;
+
+export const OrcamentoSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 7.8rem 34.7rem;
+  max-width: 192rem;
+
+  h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+  p{
+    font-size: 1.8rem;
+    margin-bottom: 3.6rem;
+    color: #797979;
+  }
+
+  @media screen and (max-width: 1920px) {
+    padding: 7.8rem 18%;
+  }
+  @media screen and (max-width: 1850px) {
+    padding: 7.8rem 14%;
+  }
+  @media screen and (max-width: 1650px) {
+    padding: 7.8rem 10%;
+  }
+  @media screen and (max-width: 1500px) {
+    padding: 7.8rem 5%;
+  }
+`;

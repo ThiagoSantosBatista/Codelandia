@@ -69,7 +69,11 @@ const Main = () => {
           </S.GaleriaUl>
         </S.GaleriaSectionBox>
       </S.GaleriaSection>
-      <section></section>
+      <S.OrcamentoSection>
+          <h2>Orçamento</h2>
+          <p>Interessado em entrar em contato com um de nossos profissionais?</p>
+          <Button color="branco" text="Entre em contato" />
+      </S.OrcamentoSection>
     </main>
   );
 };
