@@ -15,7 +15,7 @@ const Logo = ({local}: LogoProps) => {
       </S.LogoHeader>
     );
   }
-  return <S.Logo></S.Logo>;
+  return <S.Logo><LogoImg /></S.Logo>;
 };
 
 export default Logo;
