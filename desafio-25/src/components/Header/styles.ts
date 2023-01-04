@@ -8,17 +8,37 @@ export const Header = styled.header`
   margin: 0 auto;
   padding: 0 34.7rem;
   max-width: 192rem;
+
+  .btnHeader{ 
+    display: none;
+    border: none;
+    background: none;
+  }
+
   @media screen and (max-width: 1920px) {
     padding: 0 18%;
   }
   @media screen and (max-width: 1850px) {
     padding: 0 14%;
   }
-  @media screen and (max-width: 1650px) {
-    padding: 0 10%;
+  @media screen and (max-width: 1700px) {
+    padding: 0 12%;
   }
   @media screen and (max-width: 1500px) {
+    padding: 0 8%;
+    height: 7.2rem;
+  }
+  @media screen and (max-width: 1300px) {
     padding: 0 5%;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0 5%;
+    .menuAbrir{ 
+      display: block;
+    }
+    .nav{
+      display: none;
+    }
   }
 `;
 
@@ -27,6 +47,7 @@ export const NavUlPrincipal = styled.ul`
   align-items: center;
   gap: 4.8rem;
   font-size: 1.8rem;
+  @media screen and (max-width: 900px) {}
 `;
 
 export const NavUlSecundario = styled.ul`

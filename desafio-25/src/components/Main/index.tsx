@@ -9,9 +9,9 @@ import Button from "../Button";
 
 const Main = () => {
   return (
-    <main>
+    <S.Main>
       <S.HeroSection>
-        <S.HeroBox>
+        <S.HeroBox className="padding">
           <S.HeroContentBox>
             <header>
               <h1>
@@ -23,13 +23,15 @@ const Main = () => {
               Encontre uma variedade de propriedades que combinam com você.
               Esqueça todas as dificuldades em encontrar uma residência
             </p>
-            <Button text="Entre em contato" />
-            <a href="#home">Mais sobre nós</a>
+            <div className="btnBox">
+              <Button text="Entre em contato" />
+              <a href="#home">Mais sobre nós</a>
+            </div>
           </S.HeroContentBox>
           <img src={HeroImg} alt="" />
         </S.HeroBox>
       </S.HeroSection>
-      <S.DesignSection>
+      <S.DesignSection className="padding">
         <S.DesignImgBox>
           <img src={DesignImg} alt="" />
         </S.DesignImgBox>
@@ -48,7 +50,7 @@ const Main = () => {
         </S.DesignContentBox>
       </S.DesignSection>
       <S.GaleriaSection>
-        <S.GaleriaSectionBox>
+        <S.GaleriaSectionBox className="padding">
           <header>
             <h2>Galeria</h2>
           </header>
@@ -69,12 +71,12 @@ const Main = () => {
           </S.GaleriaUl>
         </S.GaleriaSectionBox>
       </S.GaleriaSection>
-      <S.OrcamentoSection>
-          <h2>Orçamento</h2>
-          <p>Interessado em entrar em contato com um de nossos profissionais?</p>
-          <Button color="branco" text="Entre em contato" />
+      <S.OrcamentoSection className="padding">
+        <h2>Orçamento</h2>
+        <p>Interessado em entrar em contato com um de nossos profissionais?</p>
+        <Button color="branco" text="Entre em contato" />
       </S.OrcamentoSection>
-    </main>
+    </S.Main>
   );
 };
 
