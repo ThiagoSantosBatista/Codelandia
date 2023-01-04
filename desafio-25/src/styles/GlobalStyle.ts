@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
    body{
      font-size: 1.6rem;
       min-height: 100vh;
+      position: relative;
    }
    img{
       display: block;

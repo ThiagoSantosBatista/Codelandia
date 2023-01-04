@@ -1,14 +1,29 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  z-index: 8;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 1500px) {
+    height: 7.2rem;
+
+  }
+`;
+
+export const HeaderBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  height: 100%;
   margin: 0 auto;
   padding: 0 34.7rem;
   max-width: 192rem;
   position: relative;
+  background: #ffffff;
 
   .bgMobile {
     display: none;
@@ -16,7 +31,7 @@ export const Header = styled.header`
     inset: 0;
     min-height: 100vh;
     width: 100%;
-    z-index: 5;
+    z-index: 9;
     background-color: rgba(0, 0, 0, 0.7);
   }
   .btnHeader {
@@ -37,7 +52,6 @@ export const Header = styled.header`
   }
   @media screen and (max-width: 1500px) {
     padding: 0 8%;
-    height: 7.2rem;
   }
   @media screen and (max-width: 1300px) {
     padding: 0 5%;

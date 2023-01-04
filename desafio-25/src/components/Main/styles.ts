@@ -35,6 +35,11 @@ export const Main = styled.main`
 
 export const HeroSection = styled.section`
   background: #f9f9f9;
+  margin-top: 10rem;
+  @media screen and (max-width: 1500px) {
+    margin-top: 7.2rem;
+
+  }
 `;
 
 export const HeroBox = styled.div`
