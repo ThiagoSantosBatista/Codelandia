@@ -5,14 +5,23 @@ import { ReactComponent as UserSvg } from "../../assets/user.svg";
 import { ReactComponent as HeartSvg } from "../../assets/heart.svg";
 import { ReactComponent as SearchSvg } from "../../assets/search.svg";
 import { ReactComponent as MenuAbrir } from "../../assets/menuMobile.svg";
+import { ReactComponent as MenuFechar } from "../../assets/menuClose.svg";
 
 const Header = () => {
-  const navRef = useRef<HTMLElement>(null);
+  const menuRef = useRef<HTMLElement>(null);
+
+  function toggleMenu() {
+    menuRef.current?.classList.toggle("ativo");
+  }
 
   return (
-    <S.Header>
+    <S.Header ref={menuRef}>
       <Logo local="header" />
-      <nav className="nav" ref={navRef}>
+      <span className="bgMobile"></span>
+      <nav className="nav">
+        <button className="btnHeader menuFechar" aria-label="Fechar Menu" aria-expanded="true" onClick={toggleMenu}>
+          <MenuFechar />
+        </button>
         <S.NavUlPrincipal>
           <li>
             <a href="#home">Inicio</a>
@@ -34,10 +43,9 @@ const Header = () => {
               <SearchSvg />
             </li>
           </S.NavUlSecundario>
-          <button className="btnHeader"></button>
         </S.NavUlPrincipal>
       </nav>
-      <button className="btnHeader menuAbrir">
+      <button className="btnHeader menuAbrir" aria-label="Abrir Menu" aria-expanded="false" onClick={toggleMenu}>
         <MenuAbrir />
       </button>
     </S.Header>

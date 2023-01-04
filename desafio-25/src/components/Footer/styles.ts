@@ -44,6 +44,9 @@ export const FooterNav = styled.nav`
   @media screen and (max-width: 1000px) {
     gap: 7.8rem;
   }
+  @media screen and (max-width: 350px) {
+    gap: 3.8rem;
+  }
 `;
 
 export const FooterUl = styled.ul`
