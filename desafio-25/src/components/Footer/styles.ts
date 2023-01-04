@@ -59,8 +59,15 @@ export const FooterUl = styled.ul`
   }
   li {
     margin-bottom: 1.6rem;
+    transition: all .3s;
   }
   li:last-child {
     margin: 0;
+  }
+
+  @media (hover: hover) {
+    li:not(:first-child):hover{
+      text-decoration: underline;
+    }
   }
 `;

@@ -90,8 +90,14 @@ export const HeroContentBox = styled.div`
   a {
     font-size: clamp(1.2rem, 0.94vw + 1rem, 1.8rem);
     border-bottom: 0.1rem solid #272727;
+    transition: all 0.3s;
   }
-
+  @media (hover: hover) {
+    a:hover {
+      color: #797979;
+      border-bottom: 0.1rem solid #797979;
+    }
+  }
   @media screen and (max-width: 1300px) {
     max-width: 84rem;
     text-align: center;
@@ -156,6 +162,14 @@ export const DesignContentBox = styled.div`
     font-size: clamp(1.2rem, 0.94vw + 1rem, 1.8rem);
     border-bottom: 0.1rem solid #272727;
     align-self: flex-start;
+    transition: all 0.3s;
+  }
+
+  @media (hover: hover) {
+    a:hover {
+      color: #797979;
+      border-bottom: 0.1rem solid #797979;
+    }
   }
   @media screen and (max-width: 1300px) {
     max-width: 52rem;
@@ -232,6 +246,16 @@ export const GaleriaUl = styled.ul`
     height: auto;
     max-height: 55rem;
     object-fit: cover;
+  }
+  li{
+    transition: all .3s;
+  }
+
+  @media (hover: hover) {
+    &:has(li:hover) li:not(:hover) {
+      opacity: 0.4;
+      transform: scale(0.98);
+    }
   }
   @media screen and (max-width: 1000px) {
     img {

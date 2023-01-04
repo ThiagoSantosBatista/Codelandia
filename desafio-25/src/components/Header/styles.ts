@@ -62,7 +62,7 @@ export const Header = styled.header`
       .bgMobile {
         display: block;
       }
-      .menuAbrir{
+      .menuAbrir {
         display: none;
       }
       .nav {
@@ -84,6 +84,16 @@ export const NavUlPrincipal = styled.ul`
   align-items: center;
   gap: 4.8rem;
   font-size: 1.8rem;
+
+  li {
+    transition: all 0.3s;
+  }
+
+  @media (hover: hover) {
+    li:hover {
+      color: #797979;
+    }
+  }
   @media screen and (max-width: 900px) {
     flex-direction: column;
     margin-top: 10rem;
@@ -97,6 +107,15 @@ export const NavUlSecundario = styled.ul`
   margin-left: 0.8rem;
   svg {
     cursor: pointer;
+    & path {
+      transition: all 0.3s;
+    }
+  }
+
+  @media (hover: hover) {
+    svg:hover path {
+      stroke: #797979;
+    }
   }
   @media screen and (max-width: 900px) {
     margin-bottom: 2rem;
