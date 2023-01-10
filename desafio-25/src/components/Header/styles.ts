@@ -1,15 +1,41 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  z-index: 8;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 1500px) {
+    height: 7.2rem;
+
+  }
+`;
+
+export const HeaderBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  height: 100%;
   margin: 0 auto;
   padding: 0 34.7rem;
   max-width: 192rem;
+  position: relative;
+  background: #ffffff;
 
-  .btnHeader{ 
+  .bgMobile {
+    display: none;
+    position: fixed;
+    inset: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .btnHeader {
+    cursor: pointer;
     display: none;
     border: none;
     background: none;
@@ -26,18 +52,43 @@ export const Header = styled.header`
   }
   @media screen and (max-width: 1500px) {
     padding: 0 8%;
-    height: 7.2rem;
   }
   @media screen and (max-width: 1300px) {
     padding: 0 5%;
   }
   @media screen and (max-width: 900px) {
     padding: 0 5%;
-    .menuAbrir{ 
+    .menuAbrir {
       display: block;
     }
-    .nav{
+    .nav {
       display: none;
+      position: fixed;
+      top: 0;
+      left: 20%;
+      width: 80%;
+      height: 100vh;
+      background-color: #ffffff;
+      z-index: 10;
+      overflow-y: auto;
+    }
+    &.ativo {
+      .bgMobile {
+        display: block;
+      }
+      .menuAbrir {
+        display: none;
+      }
+      .nav {
+        display: flex;
+        flex-direction: column;
+        .menuFechar {
+          display: block;
+          position: absolute;
+          top: 2.5rem;
+          right: 5%;
+        }
+      }
     }
   }
 `;
@@ -47,7 +98,20 @@ export const NavUlPrincipal = styled.ul`
   align-items: center;
   gap: 4.8rem;
   font-size: 1.8rem;
-  @media screen and (max-width: 900px) {}
+
+  li {
+    transition: all 0.3s;
+  }
+
+  @media (hover: hover) {
+    li:hover {
+      color: #797979;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
 `;
 
 export const NavUlSecundario = styled.ul`
@@ -57,5 +121,17 @@ export const NavUlSecundario = styled.ul`
   margin-left: 0.8rem;
   svg {
     cursor: pointer;
+    & path {
+      transition: all 0.3s;
+    }
+  }
+
+  @media (hover: hover) {
+    svg:hover path {
+      stroke: #797979;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 2rem;
   }
 `;

@@ -10,6 +10,7 @@ Nesse repositório se encontra as soluções que realizei para os desafios propo
 |Desafio-04|https://tsb-codelandia04.netlify.app/|
 |Desafio-05|https://tsb-codelandia05.netlify.app/|
 |Desafio-06|https://tsb-codelandia06.netlify.app/|
+|Desafio-25|https://tsb-codelandia25.netlify.app/|
 |Desafio-26|https://tsb-codelandia26.netlify.app/|
 
 
