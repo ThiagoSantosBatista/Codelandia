@@ -4,7 +4,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  height: 13rem;
   width: 100%;
   max-width: 192rem;
   margin: 0 auto;
@@ -20,6 +20,6 @@ export const NavUl = styled.ul`
   display: flex;
   align-items: center;
   gap: 9rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 500;
 `;

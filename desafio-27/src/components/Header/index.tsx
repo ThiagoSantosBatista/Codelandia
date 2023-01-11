@@ -14,7 +14,7 @@ const Header = () => {
           <li><a href="#sobre">Sobre</a></li>
         </S.NavUl>
       </nav>
-      <Button text='Entrar' />
+      <Button local='header' text='Entrar' />
     </S.Header>
   );
 };
