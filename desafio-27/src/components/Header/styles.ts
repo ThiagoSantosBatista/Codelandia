@@ -14,6 +14,9 @@ export const Header = styled.header`
   @media screen and (max-width: 1920px) {
     padding: 0 18.02%;
   }
+  @media screen and (max-width: 1720px) {
+    padding: 0 12.02%;
+  }
 `;
 
 export const NavUl = styled.ul`

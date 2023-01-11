@@ -16,6 +16,9 @@ export const CardapioSection = styled.section`
   @media screen and (max-width: 1920px) {
     padding: 0 18.02%;
   }
+  @media screen and (max-width: 1720px) {
+    padding: 0 12.02%;
+  }
 `;
 
 export const CardapioContent = styled.div`
@@ -47,6 +50,9 @@ export const SobreSection = styled.section`
   @media screen and (max-width: 1920px) {
     padding: 0 18.02%;
   }
+  @media screen and (max-width: 1720px) {
+    padding: 0 12.02%;
+  }
 `;
 
 export const SobreContent = styled.div`
@@ -69,4 +75,30 @@ export const SobreContent = styled.div`
     color: #da2535;
     border-bottom: 0.1rem solid #da2535;
   }
+`;
+
+export const PopularesSection = styled.section`
+  text-align: center;
+  max-width: 192rem;
+  margin: 0 auto 10rem;
+  padding: 0 34.6rem;
+
+  h1{
+    font-size: 4.8rem;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 1920px) {
+    padding: 0 18.02%;
+  }
+  @media screen and (max-width: 1720px) {
+    padding: 0 12.02%;
+  }
+`;
+
+export const PopularesContent = styled.article`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 4rem;
+  margin-top: 19.4rem;
 `;
