@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const CardapioSection = styled.section`
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto auto;
   align-items: center;
   gap: 4rem;
   max-width: 192rem;
-  margin: 6rem auto 0;
+  margin: 6rem auto 10rem;
   padding: 0 34.6rem;
+
+  img {
+    justify-self: end;
+  }
 
   @media screen and (max-width: 1920px) {
     padding: 0 18.02%;
@@ -15,16 +19,54 @@ export const CardapioSection = styled.section`
 `;
 
 export const CardapioContent = styled.div`
-    max-width: 52rem;
+  max-width: 52rem;
+  font-size: 2.4rem;
 
-    h1{
-        font-size: 4.8rem;
-        font-weight: 600;
-        margin-bottom: 2.4rem;
-    }
-    p{
-        font-size: 2.4rem;
-        font-weight: 400;
-        margin-bottom: 4.8rem;
-    }
-`
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+  }
+`;
+
+export const SobreSection = styled.section`
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 12.4rem;
+  max-width: 192rem;
+  margin: 0 auto 10rem;
+  padding: 0 34.6rem;
+
+  @media screen and (max-width: 1920px) {
+    padding: 0 18.02%;
+  }
+`;
+
+export const SobreContent = styled.div`
+  max-width: 52rem;
+  font-size: 2.4rem;
+
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  a {
+    color: #da2535;
+    border-bottom: 0.1rem solid #da2535;
+  }
+`;

@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../Button";
 import ComidaOrientalImg from "../../assets/ComidaOrientalImg.png";
-import * as S from './styles'
+import SegurandoPratoImg from "../../assets/SegurandoPratoImg.jpg";
+import * as S from "./styles";
 
 const Main = () => {
   return (
@@ -17,6 +18,17 @@ const Main = () => {
         </S.CardapioContent>
         <img src={ComidaOrientalImg} alt="" />
       </S.CardapioSection>
+      <S.SobreSection>
+        <img src={SegurandoPratoImg} alt="" />
+        <S.SobreContent>
+          <h1>Feita de forma Tradicional</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#home">Ler mais sobre o modo de preparo </a>
+        </S.SobreContent>
+      </S.SobreSection>
     </main>
   );
 };
