@@ -6,17 +6,18 @@ export const Article = styled.article`
   padding: 3.2rem 2.5rem;
   border-radius: 3.2rem;
   background: #f3f3f3;
-  
+
   img {
     margin-top: -14rem;
     width: auto;
     height: 29rem;
     align-self: center;
   }
-  
+
   h2 {
     font-size: 3.2rem;
     font-weight: 500;
+    font-family: var(--font2);
     line-height: 1.2;
     margin-top: 3.8rem;
   }
@@ -27,6 +28,7 @@ export const Article = styled.article`
     line-height: 1.5;
     max-width: 35ch;
     margin-top: 1.6rem;
+    color: #616161;
   }
 
   p:last-child {
@@ -34,5 +36,6 @@ export const Article = styled.article`
     font-weight: 500;
     line-height: 1.2;
     margin-top: 3.2rem;
+    color: #292929;
   }
 `;

@@ -29,6 +29,7 @@ export const CardapioContent = styled.div`
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 1.2;
+    font-family: var(--font2);
     margin-bottom: 2.4rem;
   }
   p {
@@ -62,6 +63,7 @@ export const SobreContent = styled.div`
   h1 {
     font-size: 4.8rem;
     font-weight: 600;
+    font-family: var(--font2);
     line-height: 1.2;
     margin-bottom: 2.4rem;
   }
@@ -86,6 +88,7 @@ export const PopularesSection = styled.section`
   h1{
     font-size: 4.8rem;
     font-weight: 600;
+    font-family: var(--font2);
   }
 
   @media screen and (max-width: 1920px) {
@@ -101,4 +104,30 @@ export const PopularesContent = styled.article`
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 4rem;
   margin-top: 19.4rem;
+`;
+
+export const ComentariosSection = styled.section`
+  max-width: 192rem;
+  margin: 0 auto 10rem;
+  padding: 0 34.6rem;
+
+  h1{
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-family: var(--font2);
+  }
+
+  @media screen and (max-width: 1920px) {
+    padding: 0 18.02%;
+  }
+  @media screen and (max-width: 1720px) {
+    padding: 0 12.02%;
+  }
+`;
+
+export const ComentariosContent = styled.article`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+  margin-top: 4.8rem;
 `;

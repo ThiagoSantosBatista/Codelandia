@@ -1,18 +1,27 @@
 import React from "react";
-import Button from "../Button";
 import ComidaOrientalImg from "../../assets/ComidaOrientalImg.png";
 import SegurandoPratoImg from "../../assets/SegurandoPratoImg.jpg";
 import Populares1 from "../../assets/Populares1.png";
 import Populares2 from "../../assets/Populares2.png";
 import Populares3 from "../../assets/Populares3.png";
-import * as S from "./styles";
+import Pessoa1 from "../../assets/pessoa1.png";
+import Pessoa2 from "../../assets/pessoa2.png";
+import Button from "../Button";
 import Product from "../Product";
+import Comment from "../Comment";
+import * as S from "./styles";
 
 interface Produtos {
   img: string;
   nome: string;
   desc: string;
   valor: string;
+}
+
+interface Comentarios {
+  img: string;
+  nome: string;
+  texto: string;
 }
 
 const listaProdutos: Array<Produtos> = [
@@ -33,6 +42,20 @@ const listaProdutos: Array<Produtos> = [
     nome: "Ramen Tradicional",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     valor: "R$ 30",
+  },
+];
+
+const listaComentarios: Array<Comentarios> = [
+  {
+    img: `${Pessoa1}`,
+    nome: "Daniele Almeida",
+    texto: "Ótimo serviço! Encantada com a qualidade dos pratos.",
+  },
+  {
+    img: `${Pessoa2}`,
+    nome: "Ricardo França",
+    texto:
+      "Não é apenas a comida excelente, o serviço torna a experiência especial.",
   },
 ];
 
@@ -64,9 +87,30 @@ const Main = () => {
       <S.PopularesSection>
         <h1>Mais populares</h1>
         <S.PopularesContent>
-          {listaProdutos.map((produto) => <Product img={produto.img} nome={produto.nome} desc={produto.desc} valor={produto.valor} />)}
+          {listaProdutos.map((produto) => (
+            <Product
+              key={produto.nome}
+              img={produto.img}
+              nome={produto.nome}
+              desc={produto.desc}
+              valor={produto.valor}
+            />
+          ))}
         </S.PopularesContent>
       </S.PopularesSection>
+      <S.ComentariosSection>
+        <h1>Comentários</h1>
+        <S.ComentariosContent>
+          {listaComentarios.map((comentario) => (
+            <Comment
+              key={comentario.nome}
+              img={comentario.img}
+              nome={comentario.nome}
+              texto={comentario.texto}
+            />
+          ))}
+        </S.ComentariosContent>
+      </S.ComentariosSection>
     </main>
   );
 };
