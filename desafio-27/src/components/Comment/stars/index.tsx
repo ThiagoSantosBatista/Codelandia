@@ -1,6 +1,6 @@
-import React from 'react'
-import { ReactComponent as StarSvg } from '../../../assets/star.svg'
-import * as S from './styles'
+import React from 'react';
+import { ReactComponent as StarSvg } from '../../../assets/star.svg';
+import * as S from './styles';
 
 const Stars = () => {
   return (
@@ -11,7 +11,7 @@ const Stars = () => {
       <StarSvg />
       <StarSvg />
     </S.StarsBox>
-  )
-}
+  );
+};
 
-export default Stars
+export default Stars;

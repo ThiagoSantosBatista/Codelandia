@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
    :root{
@@ -15,21 +15,21 @@ const GlobalStyle = createGlobalStyle`
       font-size: 62.5%;
    }
    body{
-      font-size: 1.6rem;
       min-height: 100vh;
       color: #292929;
       background-color: #FBFBFB;
+      font-size: 1.6rem;
    }
    img{
       display: block;
       max-width: 100%;
    }
    a, li, button{
-      font-size: inherit;
-      font-weight: inherit;
       color: inherit;
-      text-decoration: none;
       list-style: none;
+      text-decoration: none;
+      font-weight: inherit;
+      font-size: inherit;
    }
 `;
 

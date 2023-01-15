@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.header`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 13rem;
+  justify-content: space-between;
   width: 100%;
-  max-width: 192rem;
-  margin: 0 auto;
+  height: 13rem;
   padding: 0 34.6rem;
+  margin: 0 auto;
+  max-width: 192rem;
   z-index: 10;
 
   @media screen and (max-width: 1920px) {
@@ -19,7 +19,7 @@ export const Header = styled.header`
   }
 `;
 
-export const NavUl = styled.ul`
+export const Nav__Ul = styled.ul`
   display: flex;
   align-items: center;
   gap: 9rem;
