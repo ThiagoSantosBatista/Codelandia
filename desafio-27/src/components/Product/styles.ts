@@ -10,13 +10,13 @@ export const Article = styled.article`
   img {
     align-self: center;
     width: auto;
-    height: 29rem;
+    height: 22rem;
     margin-top: -14rem;
   }
 
   h2 {
     margin-top: 3.8rem;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 500;
     font-family: var(--font2);
     line-height: 1.2;
@@ -34,7 +34,7 @@ export const Article = styled.article`
   p:last-child {
     margin-top: 3.2rem;
     color: #292929;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 500;
     line-height: 1.2;
   }

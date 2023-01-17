@@ -18,7 +18,7 @@ export const Footer = styled.footer`
 export const Footer__Nav = styled.nav`
   display: flex;
   gap: 16rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 `;
 
 export const Nav__Ul = styled.ul`
@@ -31,7 +31,7 @@ export const Nav__Ul = styled.ul`
   li:first-child {
     margin-bottom: 2.4rem;
     color: #292929;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 500;
     font-family: var(--font2);
     line-height: 1.3;

@@ -6,7 +6,7 @@ export const Main = styled.main`
   padding: 0 34.6rem;
 
   h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: 600;
     font-family: var(--font2);
     line-height: 1.2;
@@ -38,7 +38,7 @@ export const Cardapio__Section = styled.section`
 
 export const Cardapio__Content = styled.div`
   max-width: 52rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   p {
     margin-bottom: 4.8rem;
     font-weight: 400;
@@ -56,7 +56,7 @@ export const Sobre__Section = styled.section`
 
 export const Sobre__Content = styled.div`
   max-width: 52rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
 
   h1 {
     margin-bottom: 2.4rem;

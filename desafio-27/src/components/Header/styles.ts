@@ -23,6 +23,6 @@ export const Nav__Ul = styled.ul`
   display: flex;
   align-items: center;
   gap: 9rem;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
 `;

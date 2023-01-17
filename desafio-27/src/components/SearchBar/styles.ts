@@ -5,10 +5,9 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   max-width: 81rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
 
   svg {
     position: absolute;
@@ -19,22 +18,26 @@ export const Div = styled.div`
 
   input {
     width: 100%;
-    height: 100%;
-    padding: 2rem 2rem 2rem 7rem;
+    height: 6rem;
+    padding: 0 2rem 0 7rem;
     border: none;
     border: 0.1rem solid #292929;
     background-color: #fbfbfb;
     border-radius: 1rem 0 0 1rem;
-    font-size: 2.4rem;
+    font-size: 2rem;
 
+    &:focus, &:hover {
+      border-color: #da2535;
+      outline-color: #da2535;
+    }
     &::placeholder {
       color: #292929;
     }
   }
 
   button {
-    height: 100%;
-    padding: 2rem 5rem;
+    height: 6rem;
+    padding: 0 5rem;
     color: #fbfbfb;
     background: #da2535;
     border: 1px solid #da2535;
