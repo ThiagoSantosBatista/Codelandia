@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button = ({ local, text }: ButtonProps) => {
   if (local === 'header') {
-    return <S.Header__Button>{text}</S.Header__Button>;
+    return <S.Header__Button className="btnEntrar">{text}</S.Header__Button>;
   }
   return <S.Button>{text}</S.Button>;
 };

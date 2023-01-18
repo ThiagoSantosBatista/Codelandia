@@ -20,7 +20,7 @@ export const Cardapio__Section = styled.section`
   grid-template-columns: auto auto;
   align-items: center;
   gap: 4rem;
-  margin: 6rem 0 10rem;
+  margin: 19rem 0 10rem;
 
   h1 {
     margin-bottom: 2.4rem;
@@ -34,6 +34,9 @@ export const Cardapio__Section = styled.section`
     object-position: left;
   }
 
+  @media screen and (max-width: 1050px) {
+    margin: 13.2rem 0 6rem;
+  }
   @media screen and (max-width: 850px) {
     grid-template-columns: auto;
     img {

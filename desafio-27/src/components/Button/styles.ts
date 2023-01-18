@@ -24,4 +24,8 @@ export const Header__Button = styled(Button)`
   color: #292929;
   background: none;
   border: 0.2rem solid #292929;
+
+  @media screen and (max-width: 550px) {
+    width: auto;
+  }
 `;
