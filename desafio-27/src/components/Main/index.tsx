@@ -7,6 +7,7 @@ import Populares3 from '../../assets/Populares3.png';
 import Pessoa1 from '../../assets/pessoa1.png';
 import Pessoa2 from '../../assets/pessoa2.png';
 import Mapa from '../../assets/mapa.jpg';
+import MapaMobile from '../../assets/mapaMobile.jpg';
 import Button from '../Button';
 import Product from '../Product';
 import Comment from '../Comment';
@@ -122,7 +123,10 @@ const Main = () => {
       </S.Comentarios__Section>
       <S.Localizacao__Section>
         <h1>Localização</h1>
-        <img src={Mapa} alt="Mapa" />
+        <picture>
+          <source media="(max-width: 500px)" srcSet={MapaMobile} />
+          <img src={Mapa} alt="Mapa" />
+        </picture>
         <SearchBar />
       </S.Localizacao__Section>
     </S.Main>

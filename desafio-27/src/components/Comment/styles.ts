@@ -5,7 +5,7 @@ export const Article = styled.article`
   background: #f3f3f3;
   border-radius: 1.6rem;
 
-  img{
+  img {
     height: 10rem;
     width: auto;
   }
@@ -24,5 +24,23 @@ export const Article = styled.article`
     color: #616161;
     font-size: 2rem;
     line-height: 1.5;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+
+    h2 {
+      font-size: clamp(1.8rem, 1.2375rem + 1.5625vw, 2.8rem);
+    }
+    p {
+      font-size: clamp(1.6rem, 1.375rem + 0.625vw, 2rem);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
   }
 `;

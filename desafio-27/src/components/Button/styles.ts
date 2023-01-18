@@ -6,9 +6,17 @@ export const Button = styled.button`
   color: #fbfbfb;
   background: #da2535;
   border-radius: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
+
+  @media screen and (max-width: 1000px) {
+    font-size: clamp(1.6rem, 1.375rem + 0.625vw, 2rem);
+  }
+  @media screen and (max-width: 550px) {
+    font-size: clamp(1.6rem, 1.375rem + 0.625vw, 2rem);
+    width: 100%;
+  }
 `;
 
 export const Header__Button = styled(Button)`
