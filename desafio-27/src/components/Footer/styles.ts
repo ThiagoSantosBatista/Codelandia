@@ -4,6 +4,21 @@ export const Footer = styled.footer`
   display: flex;
   gap: 5rem;
   margin-bottom: 10rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 6rem;
+    svg {
+      width: 12rem;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    gap: 3.2rem;
+    svg {
+      width: 9rem;
+    }
+  }
 `;
 
 export const Footer__Nav = styled.nav`
@@ -13,10 +28,13 @@ export const Footer__Nav = styled.nav`
   font-size: 1.6rem;
 
   @media screen and (max-width: 1250px) {
-    gap: 10rem;
+    gap: 5rem 10rem;
   }
   @media screen and (max-width: 1000px) {
     font-size: clamp(1.4rem, 1.2875rem + 0.3125vw, 1.6rem);
+  }
+  @media screen and (max-width: 450px) {
+    gap: 4rem 5rem;
   }
 `;
 
@@ -43,6 +61,11 @@ export const Nav__Ul = styled.ul`
   @media screen and (max-width: 1000px) {
     li:first-child {
       font-size: clamp(1.6rem, 0.925rem + 1.875vw, 2.8rem);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    li:first-child {
+      margin-bottom: 1.6rem;
     }
   }
 `;

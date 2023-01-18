@@ -216,6 +216,8 @@ export const Localizacao__Section = styled.section`
     }
   }
   @media screen and (max-width: 600px) {
+    margin-bottom: 6rem;
+
     h1 {
       margin-bottom: 3rem;
     }
