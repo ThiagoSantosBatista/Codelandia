@@ -13,6 +13,7 @@ import Product from '../Product';
 import Comment from '../Comment';
 import SearchBar from '../SearchBar';
 import * as S from './styles';
+import { motion } from 'framer-motion';
 
 interface Produtos {
   id: number;
@@ -71,8 +72,8 @@ const listaComentarios: Array<Comentarios> = [
 
 const Main = () => {
   return (
-    <S.Main>
-      <S.Cardapio__Section>
+    <S.Main id="home">
+      <S.Cardapio id="cardapio">
         <S.Cardapio__Content>
           <h1>Comida Oriental</h1>
           <p>
@@ -81,20 +82,35 @@ const Main = () => {
           </p>
           <Button text="Cardápio" />
         </S.Cardapio__Content>
-        <img src={ComidaOrientalImg} alt="" />
-      </S.Cardapio__Section>
-      <S.Sobre__Section>
-        <img src={SegurandoPratoImg} alt="" />
+        <img src={ComidaOrientalImg} alt="Comida oriental" />
+      </S.Cardapio>
+      <S.Sobre id="sobre">
+        <img src={SegurandoPratoImg} alt="Prato de comida" />
         <S.Sobre__Content>
           <h1>Feita de forma Tradicional</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a href="#home">Ler mais sobre o modo de preparo </a>
+          <motion.a
+            href="#home"
+            initial={{
+              color: '#da2535',
+              borderColor: '#da2535',
+            }}
+            whileHover={{
+              color: '#292929',
+              borderColor: '#292929',
+            }}
+            transition={{
+              duration: 0.3,
+            }}
+          >
+            Ler mais sobre o modo de preparo{' '}
+          </motion.a>
         </S.Sobre__Content>
-      </S.Sobre__Section>
-      <S.Populares__Section>
+      </S.Sobre>
+      <S.Populares>
         <h1>Mais populares</h1>
         <S.Populares__Content>
           {listaProdutos.map(produto => (
@@ -107,8 +123,8 @@ const Main = () => {
             />
           ))}
         </S.Populares__Content>
-      </S.Populares__Section>
-      <S.Comentarios__Section>
+      </S.Populares>
+      <S.Comentarios>
         <h1>Comentários</h1>
         <S.Comentarios__Content>
           {listaComentarios.map(comentario => (
@@ -120,15 +136,15 @@ const Main = () => {
             />
           ))}
         </S.Comentarios__Content>
-      </S.Comentarios__Section>
-      <S.Localizacao__Section>
+      </S.Comentarios>
+      <S.Localizacao>
         <h1>Localização</h1>
         <picture>
           <source media="(max-width: 500px)" srcSet={MapaMobile} />
           <img src={Mapa} alt="Mapa" />
         </picture>
         <SearchBar />
-      </S.Localizacao__Section>
+      </S.Localizacao>
     </S.Main>
   );
 };

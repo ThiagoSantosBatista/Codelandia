@@ -13,6 +13,12 @@ const GlobalStyle = createGlobalStyle`
    }
    html{
       font-size: 62.5%;
+      scroll-behavior: smooth;
+      scroll-padding-top: 11rem;
+
+      @media screen and (max-width: 1050px) {
+         scroll-padding-top: 8.2rem;
+      }
    }
    body{
       min-height: 100vh;

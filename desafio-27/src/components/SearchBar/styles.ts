@@ -40,8 +40,7 @@ export const Div = styled.div`
     height: 6rem;
     padding: 0 5rem;
     color: #fbfbfb;
-    background: #da2535;
-    border: 1px solid #da2535;
+    border: none;
     border-radius: 0 1rem 1rem 0;
     cursor: pointer;
 
@@ -72,12 +71,12 @@ export const Div = styled.div`
     }
   }
   @media screen and (max-width: 650px) {
-    max-width: 100%;;
-    input{
+    max-width: 100%;
+    input {
       height: 4rem;
       padding: 0 1.5rem 0 5rem;
     }
-    button{
+    button {
       height: 4rem;
       padding: 0 1.5rem;
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import * as S from './styles';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
@@ -14,14 +15,59 @@ const Footer = () => {
         </S.Nav__Ul>
         <S.Nav__Ul>
           <li>Sobre nós</li>
-          <li><a href="#home">Menu</a></li>
-          <li><a href="#home">Valores</a></li>
-          <li><a href="#home">Pagina principal</a></li>
+          <li>
+            <motion.a
+              href="#home"
+              whileHover={{
+                textDecoration: 'underline',
+              }}
+            >
+              Menu
+            </motion.a>
+          </li>
+          <li>
+            <motion.a
+              href="#home"
+              whileHover={{
+                textDecoration: 'underline',
+              }}
+            >
+              Valores
+            </motion.a>
+          </li>
+          <li>
+            <motion.a
+              href="#home"
+              whileHover={{
+                textDecoration: 'underline',
+              }}
+            >
+              Pagina principal
+            </motion.a>
+          </li>
         </S.Nav__Ul>
         <S.Nav__Ul>
           <li>Serviços</li>
-          <li><a href="#home">Entrega</a></li>
-          <li><a href="#home">Retirada</a></li>
+          <li>
+            <motion.a
+              href="#home"
+              whileHover={{
+                textDecoration: 'underline',
+              }}
+            >
+              Entrega
+            </motion.a>
+          </li>
+          <li>
+            <motion.a
+              href="#home"
+              whileHover={{
+                textDecoration: 'underline',
+              }}
+            >
+              Retirada
+            </motion.a>
+          </li>
         </S.Nav__Ul>
       </S.Footer__Nav>
     </S.Footer>

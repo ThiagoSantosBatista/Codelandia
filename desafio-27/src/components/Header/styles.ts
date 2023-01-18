@@ -4,16 +4,25 @@ export const Header = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 10rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+  z-index: 10;
+
+  @media screen and (max-width: 1050px) {
+    height: 7.2rem;
+  }
+`;
+
+export const HeaderBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 75%;
-  height: 13rem;
+  height: 100%;
   margin: 0 auto;
   max-width: 122.8rem;
   background-color: #fbfbfb;
-  z-index: 10;
 
   .bgMobile {
     display: none;
@@ -42,8 +51,6 @@ export const Header = styled.header`
   }
 
   @media screen and (max-width: 1050px) {
-    height: 7.2rem;
-
     .logo {
       width: 12rem;
       height: auto;

@@ -11,7 +11,7 @@ interface CommentProps {
 const Comment = ({ img, nome, texto }: CommentProps) => {
   return (
     <S.Article>
-      <img src={img} alt="" />
+      <img src={img} alt="Foto do cliente" />
       <h2>{nome}</h2>
       <p>{texto}</p>
       <Stars />

@@ -15,12 +15,12 @@ export const Main = styled.main`
   }
 `;
 
-export const Cardapio__Section = styled.section`
+export const Cardapio = styled.section`
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   gap: 4rem;
-  margin: 19rem 0 10rem;
+  margin: 16rem 0 10rem;
 
   h1 {
     margin-bottom: 2.4rem;
@@ -35,7 +35,7 @@ export const Cardapio__Section = styled.section`
   }
 
   @media screen and (max-width: 1050px) {
-    margin: 13.2rem 0 6rem;
+    margin: 10.2rem 0 6rem;
   }
   @media screen and (max-width: 850px) {
     grid-template-columns: auto;
@@ -72,7 +72,7 @@ export const Cardapio__Content = styled.div`
   }
 `;
 
-export const Sobre__Section = styled.section`
+export const Sobre = styled.section`
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
@@ -126,7 +126,6 @@ export const Sobre__Content = styled.div`
   }
 
   a {
-    color: #da2535;
     border-bottom: 0.1rem solid #da2535;
   }
 
@@ -142,7 +141,7 @@ export const Sobre__Content = styled.div`
   }
 `;
 
-export const Populares__Section = styled.section`
+export const Populares = styled.section`
   margin-bottom: 10rem;
   text-align: center;
 
@@ -168,7 +167,7 @@ export const Populares__Content = styled.article`
   }
 `;
 
-export const Comentarios__Section = styled.section`
+export const Comentarios = styled.section`
   margin-bottom: 10rem;
 
   @media screen and (max-width: 1000px) {
@@ -197,7 +196,7 @@ export const Comentarios__Content = styled.article`
   }
 `;
 
-export const Localizacao__Section = styled.section`
+export const Localizacao = styled.section`
   margin-bottom: 10rem;
 
   h1 {
