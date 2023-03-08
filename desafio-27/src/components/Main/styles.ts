@@ -43,10 +43,6 @@ export const Cardapio = styled.section`
       display: none;
     }
   }
-  @media screen and (max-width: 600px) {
-    gap: 6rem;
-    margin: 4rem 0 6rem;
-  }
 `;
 
 export const Cardapio__Content = styled.div`
